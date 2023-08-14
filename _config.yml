@@ -1,34 +1,5 @@
-title: Olasunkanmi Aremu
+title: Olasunkanmi Aremu - Data Scientist Portfolio
 logo: /assets/OLASUNKANMI_HEADSHOT.png
-description: Welcome to my creative world! Explore my projects and journey in Data.
+description: Data Analyst | Python | SQL | AWS | Snowflake | MATLAB
 show_downloads: false
 theme: jekyll-theme-cayman
-
-# Customize colors
-colors:
-  primary: "#023046"
-  text: "#333"
-  background: "#D9F2F9"
-  link: "#2D6DC2"  # Adjusted link color
-
-# Add social media links
-social:
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/olasunkanmiaremu
-  - title: Twitter
-    url: https://twitter.com/datawitted
-
-# Add custom CSS
-sass:
-  style: compressed
-  include_paths:
-    - _sass
-
-# Remove navigation links (if using single-page layout)
-navbar_links: []
-
-# Additional settings
-google_analytics: UA-XXXXXXXXX
-
-# Customize title font size
-title-font-size: 2rem  # Adjust the value as needed
