@@ -1,7 +1,7 @@
 title: Olasunkanmi Aremu
 logo: /assets/OLASUNKANMI_HEADSHOT.png
-description: Welcome to my creative world! Explore my projects and journey in data analytics.
-show_downloads: true
+description: Welcome to my creative world! Explore my projects and journey in Data.
+show_downloads: false
 theme: jekyll-theme-cayman
 
 # Customize colors
@@ -16,7 +16,7 @@ social:
   - title: LinkedIn
     url: https://www.linkedin.com/in/olasunkanmiaremu
   - title: Twitter
-    url: https://twitter.com/your_twitter_handle
+    url: https://twitter.com/datawitted
 
 # Add custom CSS
 sass:
@@ -24,14 +24,11 @@ sass:
   include_paths:
     - _sass
 
-# Configure navigation menu
-navbar_links:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects
-  - title: Blog
-    url: /blog
+# Remove navigation links (if using single-page layout)
+navbar_links: []
+
+# Additional settings
+google_analytics: UA-XXXXXXXXX
 
 # Customize title font size
 title-font-size: 2rem  # Adjust the value as needed
