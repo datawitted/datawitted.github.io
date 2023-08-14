@@ -1,7 +1,3 @@
-d---
-layout: default
----
-
 <div style="display: flex; justify-content: space-between; align-items: center; background-color: #D9F2F9; padding: 20px;">
     <div style="flex: 1; text-align: center;">
         <img src="/assets/OLASUNKANMI_HEADSHOT.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #023046; background-color: #2D6DC2;">
@@ -21,20 +17,29 @@ layout: default
 </nav>
 
 <div id="about" style="background-color: white; padding: 20px; color: #023046;">
-    <!-- I am a data analyst with a background in digital marketing. Motivated by the power of data, I transitioned to this field and gained proficiency in SQL, Python, Power BI, Tableau, and Excel. My goal is to help businesses make data-driven decisions that drive growth and efficiency. As an entry-level candidate, I bring a fresh perspective, a strong work ethic, and a hunger to learn and grow. I am seeking an opportunity to work with experienced professionals who can mentor me and also contribute to an organization's data analytics efforts. -->
+    I am a data analyst with a background in digital marketing. Motivated by the power of data, I transitioned to this field and gained proficiency in SQL, Python, Power BI, Tableau, and Excel. My goal is to help businesses make data-driven decisions that drive growth and efficiency. As an entry-level candidate, I bring a fresh perspective, a strong work ethic, and a hunger to learn and grow. I am seeking an opportunity to work with experienced professionals who can mentor me and also contribute to an organization's data analytics efforts.
 </div>
 
 <div id="experience" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <!-- Data Scientist @ Toyota Financial Services (June 2022 - Present)
+    Data Scientist @ Toyota Financial Services (June 2022 - Present)
 Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
 Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
 Data Science Consultant @ Shawhin Talebi Ventures LLC (December 2020 - Present)
 Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes -->
+Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
 </div>
 
+<div id="education" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
+- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
+- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
+- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+    
 <div id="projects" style="background-color: white; padding: 20px; color: #023046;">
-    <!-- Projects content here -->
+   [Publication](https://www.mdpi.com/1424-8220/22/8/3048)
+
+Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+
+![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
 </div>
 
 <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
