@@ -76,7 +76,7 @@ plt.pie(expenses_by_category, labels=expenses_by_category.index)
 plt.title('Expense Breakdown by Category')
 plt.show()
 </pre>
-    <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="EEG Band Discovery" style="max-width: 300px;">
+    <img src="/asset/preambule_money_pro_android.jpg" alt="EEG Band Discovery" style="width: 100%; height: auto;">
 </div>
 
 <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
