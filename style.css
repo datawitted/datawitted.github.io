@@ -175,6 +175,8 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; /* Add margin for spacing */
+    text-align: center; /* Center the button text */
 }
 
 .popup-button:hover, .close-button:hover {
