@@ -44,6 +44,7 @@
         font-size: 0.9rem;
     }
 }
+}
 #main-content {
   width: 100%; /* Adjust this value to 100% */
   margin: 0 auto;
@@ -96,6 +97,7 @@ nav a:hover {
 
 /* Popup styles */
 /* Popup styles */
+/* Popup styles */
 .popup-overlay {
     display: none;
     position: fixed;
@@ -125,6 +127,7 @@ nav a:hover {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    z-index: 999; /* Ensure close button is above popup content */
 }
 
 /* Media queries for responsive layout */
@@ -136,6 +139,11 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+    .popup-overlay {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
     .popup-content {
         position: fixed;
         top: 0;
@@ -151,6 +159,30 @@ nav a:hover {
         position: sticky;
         top: 10px;
         right: 10px;
-        z-index: 999; /* Ensure close button is above popup content */
     }
+}
+
+/* Define your color palette */
+:root {
+    --primary-color: #023046;
+    --secondary-color: #2D6DC2;
+    --text-color-light: #D9F2F9;
+    --text-color-dark: #023046;
+}
+
+/* Styles for the popup buttons */
+.popup-button, .close-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popup-button:hover, .close-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
 }
