@@ -44,15 +44,15 @@
 <div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
     <h3>Personal Finance Tracker</h3>
-    <p><strong>Situation</em>)</strong></p>
+    <p><strong>Situation</em></strong></p>
     <ul>
-        <li>Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.</li>
+        Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.
     </ul>
-    <p><strong>Task</em>)</strong></p>
+    <p><strong>Task</em></strong></p>
     <ul>
-        <li>To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.</li>
+        To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.
     </ul>
-    <p><strong>Action</em>)</strong></p>
+    <p><strong>Action</em></strong></p>
     <ul>
         I utilized Python to create a user-friendly program that allows individuals to input their income and expenses, categorize their spending, and track their financial progress over time. The program includes a dashboard that displays the user's spending habits and provides tips for improving their finances. The code is available below.
 
