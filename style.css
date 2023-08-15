@@ -1,34 +1,3 @@
-/* Styles for the header section */
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D9F2F9;
-    padding: 20px;
-}
-
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #023046;
-    background-color: #2D6DC2;
-}
-
-.name {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    text-align: center;
-    color: #023046;
-}
-
-.skills {
-    font-size: 1rem;
-    text-align: center;
-    color: #023046;
-    margin-bottom: 10px;
-}
-
 /* Media query for mobile */
 @media (max-width: 480px) {
     .header {
