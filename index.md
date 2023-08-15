@@ -1,4 +1,16 @@
-<div style="display: flex; justify-content: space-between; align-items: center; background-color: #D9F2F9; padding: 20px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- Link to your CSS styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to your JavaScript file -->
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #D9F2F9; padding: 20px;">
     <div style="flex: 1; text-align: center;">
         <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #023046; background-color: #2D6DC2;">
     </div>
@@ -43,7 +55,74 @@
     
 <div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
-<!-- Add this code within your project content -->
+ <div id="project-section">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="/asset/preambule_money_pro_android.jpg" alt="Personal Finance Tracker" onclick="openPopup('projectPopup1')">
+                <h3>Personal Finance Tracker</h3>
+                <!-- Add a button or link to trigger the popup -->
+                <button class="popup-button" onclick="openPopup('projectPopup1')">View Details</button>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </div>
+    <!-- Popup for each project -->
+    <div id="projectPopup1" class="popup-overlay">
+        <div class="popup-content">
+            <!-- Popup content for Project 1 -->
+            <h3>Personal Finance Tracker</h3>
+            <p><strong>Situation</strong></p>
+            <p><strong>Situation</strong></p>
+        <ul>
+            <li>Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.</li>
+        </ul>
+        <p><strong>Task</strong></p>
+        <ul>
+            <li>To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.</li>
+        </ul>
+        <p><strong>Action</strong></p>
+        <ul>
+            <li>I utilized Python to create a user-friendly program that allows individuals to input their income and expenses, categorize their spending, and track their financial progress over time. The program includes a dashboard that displays the user's spending habits and provides tips for improving their finances. The code is available below.</li>
+        </ul>
+        <p>To create this program, I utilized the following tools and techniques:</p>
+        <ul>
+            <li>Python</li>
+            <li>Pandas library for data manipulation</li>
+        </ul>
+            <pre>
+                <pre>
+# sample code block
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# read in data
+df = pd.read_csv('expenses.csv')
+
+# group expenses by category
+expenses_by_category = df.groupby('category')['amount'].sum()
+
+# create pie chart of expenses by category
+plt.pie(expenses_by_category, labels=expenses_by_category.index)
+plt.title('Expense Breakdown by Category')
+plt.show()
+        </pre>
+            <button class="close-button" onclick="closePopup('projectPopup1')">Close</button>
+        </div>
+    </div>
+    <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
+    <!-- Talks & Lectures content here -->
+</div>
+
+<div id="publications" style="background-color: white; padding: 20px; color: #023046;">
+    <!-- Publications content here -->
+</div>
+</body>
+</html>
+    
+    
+    
+    
+    <!-- Add this code within your project content -->
 <div id="projects">
     <h2>Projects</h2>
     <!-- Project: Personal Finance Tracker -->
