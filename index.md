@@ -44,7 +44,86 @@
 <div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
 <!-- Add this code within your project content -->
-<h3>Personal Finance Tracker</h3>
+<div id="projects">
+    <h2>Projects</h2>
+    <!-- Project: Personal Finance Tracker -->
+    <div class="project">
+        <img src="/asset/preambule_money_pro_android.jpg" alt="Personal Finance Tracker" onclick="openPopup('financePopup')">
+        <h3>Personal Finance Tracker</h3>
+        <p><strong>Situation</strong></p>
+        <ul>
+            <li>Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.</li>
+        </ul>
+        <p><strong>Task</strong></p>
+        <ul>
+            <li>To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.</li>
+        </ul>
+        <p><strong>Action</strong></p>
+        <ul>
+            <li>I utilized Python to create a user-friendly program that allows individuals to input their income and expenses, categorize their spending, and track their financial progress over time. The program includes a dashboard that displays the user's spending habits and provides tips for improving their finances. The code is available below.</li>
+        </ul>
+        <p>To create this program, I utilized the following tools and techniques:</p>
+        <ul>
+            <li>Python</li>
+            <li>Pandas library for data manipulation</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Popup: Personal Finance Tracker -->
+<div id="financePopup" class="popup-overlay">
+    <div class="popup-content">
+        <!-- Popup content, including your code snippet -->
+        <h3>Personal Finance Tracker</h3>
+        <p><strong>Situation</strong></p>
+        <ul>
+            <li>Many individuals struggle with managing their personal finances...</li>
+        </ul>
+        <p><strong>Task</strong></p>
+        <ul>
+            <li>To address this issue, I developed a Python program that allows individuals to easily manage their personal finances...</li>
+        </ul>
+        <p><strong>Action</strong></p>
+        <ul>
+            <li>I utilized Python to create a user-friendly program that allows individuals to input their income and expenses...</li>
+        </ul>
+        <pre>
+# sample code block
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# read in data
+df = pd.read_csv('expenses.csv')
+
+# group expenses by category
+expenses_by_category = df.groupby('category')['amount'].sum()
+
+# create pie chart of expenses by category
+plt.pie(expenses_by_category, labels=expenses_by_category.index)
+plt.title('Expense Breakdown by Category')
+plt.show()
+        </pre>
+        <button onclick="closePopup('financePopup')">Close</button>
+    </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h3>Personal Finance Tracker</h3>
 <p><strong>Situation</strong></p>
 <ul>
         Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.
