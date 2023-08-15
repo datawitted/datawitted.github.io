@@ -22,7 +22,6 @@
 
 <div id="experience" style="background-color: #023046; padding: 20px; color: #D9F2F9;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block;">Experience</h2>
-    <h2 style="color: #D9F2F9;">Work Experience</h2>
     <p><strong>Data Scientist @ Toyota Financial Services (<em>June 2022 - Present</em>)</strong></p>
     <ul>
         <li>Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts</li>
@@ -37,7 +36,6 @@
 
 <div id="education" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #023046; background-color: #2D6DC2; padding: 10px; display: inline-block;">Education</h2>
-    <h2 style="color: #023046;">Education</h2>
     <p><strong>Ph.D., Physics | The University of Texas at Dallas (<em>May 2022</em>)</strong></p>
     <p><strong>M.S., Physics | The University of Texas at Dallas (<em>December 2019</em>)</strong></p>
     <p><strong>B.S., Physics | The University of Texas at Dallas (<em>May 2017</em>)</strong></p>
