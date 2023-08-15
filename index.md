@@ -36,11 +36,11 @@
 </div>
 
 <div id="education" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-     <h2 style="background-color: #D9F2F9; padding: 10px; display: inline-block;">Education</h2>
-    <ul>
-        <li>Ph.D., Physics | The University of Texas at Dallas (<em>May 2022</em>)</li>
-        <li>M.S., Physics | The University of Texas at Dallas (<em>December 2019</em>)</li>
-        <li>B.S., Physics | The University of Texas at Dallas (<em>May 2017</em>)</li>
+    <h2 style="color: #023046; background-color: #2D6DC2; padding: 10px; display: inline-block;">Education</h2>
+    <h2 style="color: #023046;">Education</h2>
+    <p><strong>Ph.D., Physics | The University of Texas at Dallas (<em>May 2022</em>)</strong></p>
+    <p><strong>M.S., Physics | The University of Texas at Dallas (<em>December 2019</em>)</strong></p>
+    <p><strong>B.S., Physics | The University of Texas at Dallas (<em>May 2017</em>)</strong></p>
     </ul>
 </div>
     
