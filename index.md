@@ -21,7 +21,7 @@
 </div>
 
 <div id="experience" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block;">Experience</h2>
+    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Experience</h2>
     <p><strong>Data Scientist @ Toyota Financial Services (<em>June 2022 - Present</em>)</strong></p>
     <ul>
         <li>Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts</li>
