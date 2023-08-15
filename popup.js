@@ -1,9 +1,8 @@
-// Function to open the project popup
+// JavaScript for displaying and hiding the popup
 function openPopup() {
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById("popup").style.display = "block";
 }
 
-// Function to close the project popup
 function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+    document.getElementById("popup").style.display = "none";
 }
