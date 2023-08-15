@@ -20,9 +20,9 @@
     I am a data analyst with a background in digital marketing. Motivated by the power of data, I transitioned to this field and gained proficiency in SQL, Python, Power BI, Tableau, and Excel. My goal is to help businesses make data-driven decisions that drive growth and efficiency.
 </div>
 
-<div id="experience" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <h2 style="color: #023046; background-color: #2D6DC2; padding: 10px; display: inline-block;">Work Experience</h2>
-    <h2 style="color: #023046;">Work Experience</h2>
+<div id="experience" style="background-color: #023046; padding: 20px; color: #D9F2F9;">
+    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block;">Experience</h2>
+    <h2 style="color: #D9F2F9;">Work Experience</h2>
     <p><strong>Data Scientist @ Toyota Financial Services (<em>June 2022 - Present</em>)</strong></p>
     <ul>
         <li>Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts</li>
