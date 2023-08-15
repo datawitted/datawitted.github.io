@@ -44,15 +44,15 @@
 <div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
     <h3>Personal Finance Tracker</h3>
-    <p><strong>Situation</em></strong></p>
+    <p><strong>Situation</strong></p>
     <ul>
         Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.
     </ul>
-    <p><strong>Task</em></strong></p>
+    <p><strong>Task</strong></p>
     <ul>
         To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.
     </ul>
-    <p><strong>Action</em></strong></p>
+    <p><strong>Action</strong></p>
     <ul>
         I utilized Python to create a user-friendly program that allows individuals to input their income and expenses, categorize their spending, and track their financial progress over time. The program includes a dashboard that displays the user's spending habits and provides tips for improving their finances. The code is available below.
 
@@ -60,16 +60,23 @@ To create this program, I utilized the following tools and techniques:
 <li>Python</li>
 <li>Pandas library for data manipulation</li>
     </ul>
-    
-    
-    <h3>Data-Driven EEG Band Discovery with Decision Trees</h3>
-    <p><a href="https://www.mdpi.com/1424-8220/22/8/3048" target="_blank" rel="noopener noreferrer">Publication</a></p>
-    <ul>
-        <li>Developed objective strategy for discovering optimal EEG bands based on signal power spectra using <strong>Python</strong</li>
-        <li>Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses</li>
-    </ul>
-    <p>Developed objective strategy for discovering optimal EEG bands based on signal power spectra using <strong>Python</strong>. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.</p>
-    <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="EEG Band Discovery" style="max-width: 100%;">
+    <pre>
+# sample code block
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# read in data
+df = pd.read_csv('expenses.csv')
+
+# group expenses by category
+expenses_by_category = df.groupby('category')['amount'].sum()
+
+# create pie chart of expenses by category
+plt.pie(expenses_by_category, labels=expenses_by_category.index)
+plt.title('Expense Breakdown by Category')
+plt.show()
+</pre>
+    <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="EEG Band Discovery" style="max-width: 300px;">
 </div>
 
 <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
