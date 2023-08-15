@@ -11,8 +11,8 @@
 <nav style="background-color: #023046; padding: 10px; text-align: center;">
     <a href="#about" style="color: #D9F2F9; margin-right: 20px;">About Me</a>
     <a href="#experience" style="color: #D9F2F9; margin-right: 20px;">Experience</a>
+    <a href="#education" style="color: #D9F2F9; margin-right: 20px;">Education</a>
     <a href="#projects" style="color: #D9F2F9; margin-right: 20px;">Projects</a>
-    <a href="#talks" style="color: #D9F2F9; margin-right: 20px;">Talks & Lectures</a>
     <a href="#publications" style="color: #D9F2F9; margin-right: 20px;">Publications</a>
 </nav>
 
@@ -21,7 +21,7 @@
 </div>
 
 <div id="experience" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-   ## Work Experience
+    <h2 style="color: #023046; background-color: #2D6DC2; padding: 10px; display: inline-block;">Work Experience</h2>
     <h2 style="color: #023046;">Work Experience</h2>
     <p><strong>Data Scientist @ Toyota Financial Services (<em>June 2022 - Present</em>)</strong></p>
     <ul>
@@ -36,19 +36,20 @@
 </div>
 
 <div id="education" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    ## Education
-    - Ph.D., Physics | The University of Texas at Dallas (_May 2022_)
-    - M.S., Physics	| The University of Texas at Dallas (_December 2019_)
-    - B.S., Physics | The University of Texas at Dallas (_May 2017_)
+     <h2 style="background-color: #D9F2F9; padding: 10px; display: inline-block;">Education</h2>
+    <ul>
+        <li>Ph.D., Physics | The University of Texas at Dallas (<em>May 2022</em>)</li>
+        <li>M.S., Physics | The University of Texas at Dallas (<em>December 2019</em>)</li>
+        <li>B.S., Physics | The University of Texas at Dallas (<em>May 2017</em>)</li>
+    </ul>
+</div>
     
-<div id="projects" style="background-color: white; padding: 20px; color: #023046;">
-   ## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
-
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
-
-![EEG Band Discovery](/asset/OLASUNKANMI_HEADSHOT.png)
+<div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
+    <h2 style="background-color: #2D6DC2; padding: 10px; color: #D9F2F9;">Projects</h2>
+    <h3>Data-Driven EEG Band Discovery with Decision Trees</h3>
+    <p><a href="https://www.mdpi.com/1424-8220/22/8/3048" target="_blank" rel="noopener noreferrer">Publication</a></p>
+    <p>Developed objective strategy for discovering optimal EEG bands based on signal power spectra using <strong>Python</strong>. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.</p>
+    <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="EEG Band Discovery" style="max-width: 100%;">
 </div>
 
 <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
