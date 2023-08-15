@@ -123,11 +123,20 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-    .popup-overlay {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
+    /* Popup styles */
+.popup-overlay {
+    display: none; /* Add this line to hide the popup initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure popup is on top of other content */
+}
+    @media (max-width: 480px) {
     .popup-content {
         position: fixed;
         top: 0;
@@ -137,12 +146,14 @@ nav a:hover {
         padding: 20px;
         border-radius: 0;
         overflow-y: scroll;
+        max-height: 100%; /* Add this line to ensure the popup fits within the screen */
     }
 
     .close-button {
         position: sticky;
         top: 10px;
         right: 10px;
+        z-index: 999; /* Ensure close button is above popup content */
     }
 }
 
