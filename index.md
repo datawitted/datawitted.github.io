@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -55,24 +54,23 @@
     
 <div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
- <div id="project-section">
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="/asset/preambule_money_pro_android.jpg" alt="Personal Finance Tracker" onclick="openPopup('projectPopup1')">
-                <h3>Personal Finance Tracker</h3>
-                <!-- Add a button or link to trigger the popup -->
-                <button class="popup-button" onclick="openPopup('projectPopup1')">View Details</button>
-            </div>
-            <!-- Add more projects here -->
-        </div>
-    </div>
-    <!-- Popup for each project -->
-    <div id="projectPopup1" class="popup-overlay">
-        <div class="popup-content">
-            <!-- Popup content for Project 1 -->
+    <div id="project-section">
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="/asset/preambule_money_pro_android.jpg" alt="Personal Finance Tracker" onclick="openPopup('projectPopup1')">
             <h3>Personal Finance Tracker</h3>
-            <p><strong>Situation</strong></p>
-            <p><strong>Situation</strong></p>
+            <button class="popup-button" onclick="openPopup('projectPopup1')">View Details</button>
+            <!-- Add a button or link to trigger the popup -->
+        </div>
+        <!-- Add more projects here -->
+    </div>
+</div>
+<!-- Popup for each project -->
+<div id="projectPopup1" class="popup-overlay">
+    <div class="popup-content">
+        <!-- Popup content for Project 1 -->
+        <h3>Personal Finance Tracker</h3>
+        <p><strong>Situation</strong></p>
         <ul>
             <li>Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.</li>
         </ul>
@@ -89,8 +87,7 @@
             <li>Python</li>
             <li>Pandas library for data manipulation</li>
         </ul>
-            <pre>
-                <pre>
+        <pre>
 # sample code block
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -106,18 +103,18 @@ plt.pie(expenses_by_category, labels=expenses_by_category.index)
 plt.title('Expense Breakdown by Category')
 plt.show()
         </pre>
-            <button class="close-button" onclick="closePopup('projectPopup1')">Close</button>
-        </div>
+        <button class="close-button" onclick="closePopup('projectPopup1')">Close</button>
     </div>
-    <div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
+</div>
+<div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
     <!-- Talks & Lectures content here -->
 </div>
-
 <div id="publications" style="background-color: white; padding: 20px; color: #023046;">
     <!-- Publications content here -->
 </div>
 </body>
 </html>
+
     
     
     
