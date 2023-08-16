@@ -1,116 +1,380 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <!-- Link to your CSS styles -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to your JavaScript file -->
-    <script src="popup.js"></script>
-</head>
-<body>
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #D9F2F9; padding: 20px;">
-    <div style="flex: 1; text-align: center;">
-        <img src="/asset/OLASUNKANMI_HEADSHOT.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #023046; background-color: #2D6DC2;">
-    </div>
-    <div style="flex: 1; text-align: center; color: #023046;">
-        <h1 style="font-size: 2.5rem; margin: 0;">Olasunkanmi Aremu</h1>
-        <p style="font-size: 1.25rem;">Data Analyst | Python | SQL | AWS | Snowflake | MATLAB</p>
-    </div>
-</div>
-
-<nav style="background-color: #023046; padding: 10px; text-align: center;">
-    <a href="#about" style="color: #D9F2F9; margin-right: 20px;">About Me</a>
-    <a href="#experience" style="color: #D9F2F9; margin-right: 20px;">Experience</a>
-    <a href="#education" style="color: #D9F2F9; margin-right: 20px;">Education</a>
-    <a href="#projects" style="color: #D9F2F9; margin-right: 20px;">Projects</a>
-    <a href="#publications" style="color: #D9F2F9; margin-right: 20px;">Publications</a>
-</nav>
-
-<div id="about" style="background-color: white; padding: 20px; color: #023046;">
-    I am a data analyst with a background in digital marketing. Motivated by the power of data, I transitioned to this field and gained proficiency in SQL, Python, Power BI, Tableau, and Excel. My goal is to help businesses make data-driven decisions that drive growth and efficiency.
-</div>
-
-<div id="experience" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Experience</h2>
-    <p><strong>Data Scientist @ Toyota Financial Services (<em>June 2022 - Present</em>)</strong></p>
-    <ul>
-        <li>Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts</li>
-        <li>Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses</li>
-    </ul>
-    <p><strong>Data Science Consultant @ Shawhin Talebi Ventures LLC (<em>December 2020 - Present</em>)</strong></p>
-    <ul>
-        <li>Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios</li>
-        <li>Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes</li>
-    </ul>
-</div>
-
-<div id="education" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Education</h2>
-    <p><strong>Ph.D., Physics | The University of Texas at Dallas (<em>May 2022</em>)</strong></p>
-    <p><strong>M.S., Physics | The University of Texas at Dallas (<em>December 2019</em>)</strong></p>
-    <p><strong>B.S., Physics | The University of Texas at Dallas (<em>May 2017</em>)</strong></p>
-</div>
-    
-<div id="projects" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <h2 style="color: #D9F2F9; background-color: #023046; padding: 10px; display: inline-block; width: 100%;">Projects</h2>
-    <div id="project-section">
-        <!-- Project 1 -->
-        <div class="project">
-            <img src="/asset/preambule_money_pro_android.jpg" alt="Personal Finance Tracker" onclick="openPopup('projectPopup1')">
-            <h3>Personal Finance Tracker</h3>
-            <button class="popup-button" onclick="openPopup('projectPopup1')">View Details</button>
-            <!-- Add a button or link to trigger the popup -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Olasunkanmi Aremu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Olasunkanmi Aremu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- Add more projects here -->
-    </div>
-</div>
-<!-- Popup for each project -->
-<div id="projectPopup1" class="popup-overlay">
-    <div class="popup-content">
-        <!-- Popup content for Project 1 -->
-        <h3>Personal Finance Tracker</h3>
-        <p><strong>Situation</strong></p>
-        <ul>
-            <li>Many individuals struggle with managing their personal finances. They may not have the necessary tools or knowledge to effectively budget and make informed financial decisions. Additionally, traditional personal finance software can be expensive and difficult to use.</li>
-        </ul>
-        <p><strong>Task</strong></p>
-        <ul>
-            <li>To address this issue, I developed a Python program that allows individuals to easily manage their personal finances. My role in the project was as the sole developer.</li>
-        </ul>
-        <p><strong>Action</strong></p>
-        <ul>
-            <li>I utilized Python to create a user-friendly program that allows individuals to input their income and expenses, categorize their spending, and track their financial progress over time. The program includes a dashboard that displays the user's spending habits and provides tips for improving their finances. The code is available below.</li>
-        </ul>
-        <p>To create this program, I utilized the following tools and techniques:</p>
-        <ul>
-            <li>Python</li>
-            <li>Pandas library for data manipulation</li>
-        </ul>
-        <pre>
-# sample code block
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# read in data
-df = pd.read_csv('expenses.csv')
-
-# group expenses by category
-expenses_by_category = df.groupby('category')['amount'].sum()
-
-# create pie chart of expenses by category
-plt.pie(expenses_by_category, labels=expenses_by_category.index)
-plt.title('Expense Breakdown by Category')
-plt.show()
-        </pre>
-        <button class="close-button" onclick="closePopup('projectPopup1')">Close</button>
-    </div>
-</div>
-<div id="talks" style="background-color: #D9F2F9; padding: 20px; color: #023046;">
-    <!-- Talks & Lectures content here -->
-</div>
-<div id="publications" style="background-color: white; padding: 20px; color: #023046;">
-    <!-- Publications content here -->
-</div>
-</body>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/OLASUNKANMI_HEADSHOT.png" alt="Olasunkanmi Aremu profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Olasunkanmi Arem</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/OLASUNKANMI_HEADSHOT.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Data Analyst</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree of Business Administration<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a data analyst with a background in digital marketing.
+               Motivated by the power of data, I transitioned to this field
+              and gained proficiency in SQL, Python, Power BI, Tableau, and Excel.
+              My goal is to help businesses make data-driven decisions that drive growth and efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analytics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Marketing Analytics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/preambule_money_pro_android.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:olasunkanmifarouq@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Olasunkanmi Aremu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
